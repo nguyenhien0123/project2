@@ -11,8 +11,6 @@ video.addEventListener("loadeddata", ()=>{ //load lai trang
 })
 
 
-
-
 // tim kiem
 const form=document.querySelector('.form-search');
 const input=document.querySelector("#search");
@@ -33,3 +31,4 @@ if(valueInput && valueInput !==""){
     window.location.reload();
 }
 })
+

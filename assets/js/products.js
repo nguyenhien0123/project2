@@ -23,7 +23,7 @@ data.forEach((item) => {
     HTML += `<div class="col-12 col-sm-6 col-md-4">
  <div class="product-right">
 <div class="product-right-top">
-       <a href="detail.html?id=1" class="product-link"><img src="${item.img}" alt="sofa1"></a>
+       <a href="detail.html?id=${item.id}" class="product-link"><img src="${item.img}" alt="sofa1"></a>
        <button>sale</button>
        <p><i class="fa-regular fa-heart"></i></p>
    </div>
@@ -44,23 +44,16 @@ data.forEach((item) => {
        <div class="bt-ship">
            <button>${item.btnShip}</button>
            <div class="add-cart">
-           <i class="fa-regular fa-cart-shopping"></i>
+           
          </div>
        </div>
-
       
-       
    </div>
 </div>
 </div>`;
 });
 itemInterior.innerHTML=HTML;
 }
-
-// addto cart
-// truy cap phan tu
-const addToCart=document.querySelectorAll('.add-cart');
-console.log(addToCart);
 
 
 
@@ -89,3 +82,27 @@ if(valueInput && valueInput !==""){
     window.location.reload();
 }
 })
+
+
+
+
+const cartQuantityElement = document.querySelector('.cart-quantity');
+
+const updateCartQuantityDisplay = () => {
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  // Tính tổng số lượng sản phẩm trong giỏ hàng
+  const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0);
+
+  // Hiển thị số lượng sản phẩm trên trang web
+  cartQuantityElement.textContent = totalQuantity;
+};
+
+
+updateCartQuantityDisplay();
+
+document.addEventListener('DOMContentLoaded', () => {
+    updateCartQuantityDisplay(); // Cập nhật số lượng sản phẩm ban đầu
+  });
+  
+  

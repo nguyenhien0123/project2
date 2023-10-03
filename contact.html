@@ -24,6 +24,66 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
+<style>
+    @media  (max-width:480px){
+        .header-top{
+            width: 743px;
+            height: 44px;
+
+        }
+        .banner-contact{
+            width: 743px;
+            height: 200px;
+            margin-left: 30px;
+
+        }
+        .banner-contact{
+            width: 743px;
+            height: 200px;
+            overflow: hidden;
+
+        }
+        .banner-contact img{
+            width: 450px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+
+        }
+        .box-contact{
+            display: none;
+        }
+        .describe{
+        display: none;
+       }
+       
+        /* wrap-text-left */
+        .wrap-text-left{
+            margin-top: 20px;
+        }
+        .text-left1{
+            display: flex;
+
+        }
+        .wrap-describe{
+            display: flex;
+            height: 886px;
+            margin-bottom: 200px;
+        }
+        /* wrap-service */
+        .wrap-service{
+
+            margin-left: 20px;
+        }
+      .box-footer{
+        margin-left: 30px;
+      }
+      .emails{
+        flex: 1;
+        width: 90%;
+      }
+}
+</style>
 <body>
    <!-- header-top -->
    <div class="header-top">
@@ -48,17 +108,19 @@
     </div>
    </div>
    </div>
-   <!-- menu-header -->
-   <div class="menu-header">
+  <!-- menu-header -->
+  <div class="menu-header">
     <div class="container">
         <div class="row">
+            <div class="icon-menu">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </div>
             <div class="col-2 col-sm-2 col-md-2 wrap-menu">
-                <!-- <div class="icon-menu">
-                    <i class="fa-solid fa-bars fa-xl"></i>
-                </div> -->
+               
                 <div class="logo">
                     <img src="./assets/img/logo.png" alt="">
                 </div>
+             
             </div>
             <div class="col-8 col-sm-8 col-md-8 search">
                 <form action="" class="form-search">
@@ -72,11 +134,31 @@
                 </div>
                 <div class="cart">
                     <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
-                    <a href="cart.html"><p>Cart</p></a>
+                    <span class="cart-quantity">0</span>
+                    <a href="cart.html"></a>
                 </div>
             </div>
-
+  
         </div>
+    </div>
+    <div class="popup-menu">
+       
+        <ul>
+            <div class="icon-close">
+                <i class="fa-solid fa-xmark fa-lg"></i>
+            </div>
+            <li><a href="index.html" > <i class="fa-solid fa-house"></i> Home </a></li>
+            <li><a href="signin.html"><i class="fa-regular fa-user"></i> SignIn</a></li>
+            <li><a href="login.html"><i class="fa-regular fa-user"></i> LogIn</a></li>
+  
+            <li><a href="product.html"><i class="fa-brands fa-product-hunt"></i> Product</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-c"></i> Contact</a></li>
+            <li><a href="blog.htm"><i class="fa-solid fa-blog"></i> Blog</a></li>
+            <li><a href="detail.html"><i class="fa-solid fa-d"></i> Detail</a></li>
+            <li><a href="cart.html"><i class="fa-regular fa-cart-shopping"></i> Cart</a></li>
+  
+  
+        </ul>
     </div>
    </div>
    <!-- ul-menu -->
@@ -85,9 +167,8 @@
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="product.html">Product</a></li>
-        <li><a href="lienhe.html">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li><a href="blog.htm">Blog</a></li>
-        <li><a href="sale.html">Sale</a></li>
     </ul>
    </div>
    </div>
@@ -96,8 +177,8 @@
     <img src="./assets/img/default_contact.jpeg" alt="">
     <div class="container">
         <div class="box-contact">
-       <div class="row">
-        <div class=" col-sm-6 col-md-6">
+       <div class="row wrap-contact">
+        <div class="col-6 col-sm-6 col-md-6">
             <div class="box-contact">
                 <div class="text-contact">
                     <h3>Dịch vụ thiết kế Wayfair</h3>
@@ -115,22 +196,22 @@
    <div class="describe">
     <div class="container">
         <h3>Thiết kế cho mọi không gian và phong cách</h3>
-        <div class="row"><div class="col-12 col-sm-6 col-md-3 text-describe">
+        <div class="row wrap-describe"><div class="col-6 col-sm-6 col-md-3 text-describe">
             <h4>Chuyên gia thiết kế tận tâm</h4>
             <p>Hỗ trợ thiết kế nội thất chuyên nghiệp, tận tâm và an toàn với khoản đặt cọc $99 - không tính phí dịch vụ hoặc thiết kế bổ sung.</p>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-3 text-describe">
+        <div class="col-6 col-sm-6 col-md-3 text-describe">
             <h4>Kế hoạch & ý tưởng tùy chỉnh</h4>
             <p>Hỗ trợ thiết kế nội thất chuyên nghiệp, tận tâm và an toàn với khoản đặt cọc $99 - không tính phí dịch vụ hoặc thiết kế bổ sung.</p>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-3 text-describe">
+        <div class="col-6 col-sm-6 col-md-3 text-describe">
             <h4>Lựa chọn lớn, được tuyển cho bạn</h4>
             <p>Hỗ trợ thiết kế nội thất chuyên nghiệp, tận tâm và an toàn với khoản đặt cọc $99 - không tính phí dịch vụ hoặc thiết kế bổ sung.</p>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-3 text-describe">
+        <div class="col-6 col-sm-6 col-md-3 text-describe">
             <h4>Ưu đãi thưởng độc quyền</h4>
             <p>Hỗ trợ thiết kế nội thất chuyên nghiệp, tận tâm và an toàn với khoản đặt cọc $99 - không tính phí dịch vụ hoặc thiết kế bổ sung.</p>
         </div></div>
@@ -141,11 +222,11 @@
    <div class="form-infor">
     <div class="container">
         <div class="row">
-            <div class="col-8 col-sm-8 col-md-8 img-form">
+            <div class="col-12 col-sm-8 col-md-8 img-form">
                <img src="./assets/img/default_name.webp" alt="">
 
             </div>
-            <div class="col-4 col-sm-4 col-md-4 text-left-form">
+            <div class="col-0 col-sm-4 col-md-4 text-left-form">
 
                  <div class="wrap-text-left">
                     <div class="text-left1">
@@ -170,50 +251,38 @@
    </div>
 
    <!--  -->
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- service -->
   <div class="service">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-6 col-sm-6 col-md-3">
                 <div class="wrap-service">
-                   <a href="lienhe.html"><img src="./assets/img/sv1.webp" alt=""></a> 
+                   <a href="contact.html"><img src="./assets/img/sv1.webp" alt=""></a> 
                     <h5>Lựa chọn bất bại</h5>
                     <p>Tất cả mọi thứ ở nhà, tất cả ở một nơi</p>
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-6 col-sm-6 col-md-3">
                 <div class="wrap-service">
-                   <a href="lienhe.html"><img src="./assets/img/sv2.webp" alt=""></a> 
+                   <a href="contact.html"><img src="./assets/img/sv2.webp" alt=""></a> 
                     <h5>Dịch vụ chuyên nghiệp</h5>
                     <p>Đội ngũ thân thiện luôn túc trực bảy ngày một tuần.</p>
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-6 col-sm-6 col-md-3">
                 <div class="wrap-service">
-                   <a href="lienhe.html"><img src="./assets/img/sv3.webp" alt=""></a> 
+                   <a href="contact.html"><img src="./assets/img/sv3.webp" alt=""></a> 
                     <h5>Giao hàng nhanh và miễn phí trên $35*
                     </h5>
                     <p>Giao hàng trong hai ngày cho hàng ngàn mặt hàng.</p>
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-6 col-sm-6 col-md-3">
                 <div class="wrap-service">
-                   <a href="lienhe.html"> <img src="./assets/img/sv4.webp" alt=""></a>
+                   <a href="contact.html"> <img src="./assets/img/sv4.webp" alt=""></a>
                     <h5>Giá trị tuyệt vời mỗi ngày</h5>
                     <p>Các mặt hàng bạn yêu thích ở mức giá phù hợp.</p>
                 </div>
@@ -221,30 +290,17 @@
         </div>
     </div>
   </div>
- <!-- present -->
-    <div class="present">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12">
-                    <div class="wrap-present">
-                        <a href="sale.html"><img src="./assets/img/_present2.webp" alt="present"></a>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-      </div>
 
   <!-- email -->
   <div class="email">
     <div class="container">
         <div class="row wrap-email">
-            <div class="col-6 col-sm-6 col-md-6">
+            <div class="col-0 col-sm-6 col-md-6">
                 <div class="text-em">
                     <h4>Hãy là người đầu tiên biết về các giao dịch tốt nhất của chúng tôi!</h4>
                 </div>
             </div>
-            <div class="col-6 col-sm-6 col-md-6 ">
+            <div class="col-12 col-sm-6 col-md-6 ">
                 <div class="emails">
                    <input type="text" placeholder="Địa chỉ Email ">
                    <button>Gửi</button>
@@ -260,7 +316,7 @@
   <div class="footer">
     <div class="container">
         <div class="row wrap-footer">
-            <div class="col-4 col-sm-4 col-md-4">
+            <div class="col-12 col-sm-4 col-md-4">
                 <div class="box-footer">
                     <h3>Về chúng tôi</h3>
                     <ul>
@@ -278,7 +334,7 @@
                 </div>
             </div>
 
-            <div class="col-4 col-sm-4 col-md-4">
+            <div class="col-12 col-sm-4 col-md-4">
                 <div class="box-footer">
                     <h3>Dịch vụ khách hàng</h3>
                     <ul>
@@ -294,12 +350,12 @@
                 </div>
             </div>
 
-            <div class="col-4 col-sm-4 col-md-4">
+            <div class="col-12 col-sm-4 col-md-4">
                 <div class="box-footer">
                     <h3>Liên Hệ</h3>
                     <div class="button-ft">
-                        <a href="lienhe.html"><button>Trợ giúp nhanh</button></a>
-                        <a href="lienhe.html"><button>Gọi cho chúng tôi</button></a>
+                        <a href="contact.html"><button>Trợ giúp nhanh</button></a>
+                        <a href="contact.html"><button>Gọi cho chúng tôi</button></a>
                     </div>
                     <div class="text-ft">
                         <h5>Dịch vụ khách hàng</h5>
@@ -316,3 +372,9 @@
         </div>
     </div>
   </div>
+
+</body>
+<script src="./assets/js/cart.js"></script>
+    <!-- import comon.js -->
+    <script src="./assets/js/comon.js"></script>
+</html>

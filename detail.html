@@ -31,6 +31,21 @@
     <!-- ip style.css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+  <style>
+    @media  (max-width:1024px){
+  .account p{
+    display: none;
+  }
+  .total{
+    margin-top: 100px;
+    position: static;
+    margin-left: 400px;
+  }
+  .price-detail{
+    margin-top: 50px;
+  }
+}
+  </style>
   <body>
     <!-- header-top -->
     <div class="header-top">
@@ -54,159 +69,241 @@
         </div>
       </div>
     </div>
-
     <!-- menu-header -->
     <div class="menu-header">
       <div class="container">
-        <div class="row">
-          <div class="col-2 col-sm-2 col-md-2 wrap-menu">
-            <!-- <div class="icon-menu">
-                      <i class="fa-solid fa-bars fa-xl"></i>
-                  </div> -->
-            <div class="logo">
-              <img src="./assets/img/logo.png" alt="" />
-            </div>
+          <div class="row">
+              <div class="icon-menu">
+                  <i class="fa-solid fa-bars fa-2xl"></i>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 wrap-menu">
+                 
+                  <div class="logo">
+                      <img src="./assets/img/logo.png" alt="">
+                  </div>
+               
+              </div>
+              <div class="col-8 col-sm-8 col-md-8 search">
+                  <form action="" class="form-search">
+                      <input type="text" id="search" placeholder="Tìm bất cứ những gì về nội thất">
+                  </form>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 bt-icon">
+                  <div class="account">
+                      <a href="login.html"><i class="fa-regular fa-user fa-xl"></i></a>
+                      <a href="signin.html"><p>Account</p></a>
+                  </div>
+                  <div class="cart">
+                      <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                      <span class="cart-quantity">0</span>
+                      <a href="cart.html"></a>
+                  </div>
+              </div>
+    
           </div>
-          <div class="col-8 col-sm-8 col-md-8 search">
-            <form action="" class="form-search">
-              <input
-                type="text"
-                id="search"
-                placeholder="Tìm bất cứ những gì về nội thất"
-              />
-            </form>
-          </div>
-          <div class="col-2 col-sm-2 col-md-2 bt-icon">
-            <div class="account">
-              <a href="login.html"><i class="fa-regular fa-user fa-xl"></i></a>
-              <a href="login.html"><p>Account</p></a>
-            </div>
-            <div class="cart">
-              <a href="cart.html"
-                ><i class="fa-solid fa-cart-shopping fa-xl"></i
-              ></a>
-              <a href="cart.html"><p>Cart</p></a>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-    <!-- ul-menu -->
-    <div class="menu-ul">
-      <div class="container">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="product.html">Product</a></li>
-          <li><a href="lienhe.html">Contact</a></li>
-          <li><a href="blog.htm">Blog</a></li>
-          <li><a href="sale.html">Sale</a></li>
-        </ul>
+      <div class="popup-menu">
+         
+          <ul>
+              <div class="icon-close">
+                  <i class="fa-solid fa-xmark fa-lg"></i>
+              </div>
+              <li><a href="index.html" > <i class="fa-solid fa-house"></i> Home </a></li>
+              <li><a href="signin.html"><i class="fa-regular fa-user"></i> SignIn</a></li>
+              <li><a href="login.html"><i class="fa-regular fa-user"></i> LogIn</a></li>
+    
+              <li><a href="product.html"><i class="fa-brands fa-product-hunt"></i> Product</a></li>
+              <li><a href="contact.html"><i class="fa-solid fa-c"></i> Contact</a></li>
+              <li><a href="blog.htm"><i class="fa-solid fa-blog"></i> Blog</a></li>
+              <li><a href="detail.html"><i class="fa-solid fa-d"></i> Detail</a></li>
+              <li><a href="cart.html"><i class="fa-regular fa-cart-shopping"></i> Cart</a></li>
+    
+    
+          </ul>
       </div>
-    </div>
+     </div>
+   <!-- ul-menu -->
+   <div class="menu-ul">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="contact.html">Contact</a></li>
 
+
+      </ul>
+    </div>
+  </div>
     <!-- details -->
     <div class="details">
       <div class="container">
         <div class="row detail-js">
-          
+         
         </div>
       </div>
     </div>
 
-    <!-- email -->
-    <div class="email">
-      <div class="container">
-        <div class="row wrap-email">
-          <div class="col-6 col-sm-6 col-md-6">
-            <div class="text-em">
-              <h4>
-                Hãy là người đầu tiên biết về các giao dịch tốt nhất của chúng
-                tôi!
-              </h4>
-            </div>
+     <!-- sales-product -->
+ <div class="sales-product">
+  <div class="container">
+      <h3>Cập nhật nhà bếp và ăn uống</h3>
+      <div class="row sales-products">
+          <div class="col-6 col-sm-6 col-md-3">
+              <div class="wrap-sales">
+                 <a href="product.html"> <img src="./assets/img/sales-p1.webp" alt=""></a>
+                  <h3>Ghế ăn</h3>
+                  <p>Cực kì thoải mái đáng để trò chuyện</p>
+              </div>
           </div>
-          <div class="col-6 col-sm-6 col-md-6">
-            <div class="emails">
-              <input type="text" placeholder="Địa chỉ Email " />
-              <button>Gửi</button>
-            </div>
+
+          <div class="col-6 col-sm-6 col-md-3">
+              <div class="wrap-sales">
+                 <a href="product.html"><img src="./assets/img/sales-p2.webp" alt=""></a> 
+                  <h3>Bàn ăn</h3>
+                  <p>Nơi mọi người cùng nhau đến</p>
+              </div>
           </div>
-        </div>
+
+          <div class="col-6 col-sm-6 col-md-3">
+              <div class="wrap-sales">
+                 <a href="product.html"><img src="./assets/img/sales-p3.webp" alt=""></a> 
+                  <h3>Ghế chân cao</h3>
+                  <p>Dành cho mọi chiều cao</p>
+              </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-3">
+              <div class="wrap-sales">
+                 <a href="product.html"><img src="./assets/img/sales-p4.webp" alt=""></a> 
+                  <h3>Tủ bếp</h3>
+                  <p>Tăng không gian quầy</p>
+              </div>
+          </div>
       </div>
-    </div>
-    <!-- present -->
-    <div class="present">
-      <div class="container">
+  </div>
+</div>
+
+     <!-- service -->
+  <div class="service">
+    <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-12">
-            <div class="wrap-present">
-              <img src="./assets/img/_present2.webp" alt="present" />
+            <div class="col-6 col-sm-6 col-md-3">
+                <div class="wrap-service">
+                   <a href="contact.html"><img src="./assets/img/sv1.webp" alt=""></a> 
+                    <h5>Lựa chọn bất bại</h5>
+                    <p>Tất cả mọi thứ ở nhà, tất cả ở một nơi</p>
+                </div>
             </div>
-          </div>
+
+            <div class="col-6 col-sm-6 col-md-3">
+                <div class="wrap-service">
+                   <a href="contact.html"><img src="./assets/img/sv2.webp" alt=""></a> 
+                    <h5>Dịch vụ chuyên nghiệp</h5>
+                    <p>Đội ngũ thân thiện luôn túc trực bảy ngày một tuần.</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3">
+                <div class="wrap-service">
+                   <a href="contact.html"><img src="./assets/img/sv3.webp" alt=""></a> 
+                    <h5>Giao hàng nhanh và miễn phí trên $35*
+                    </h5>
+                    <p>Giao hàng trong hai ngày cho hàng ngàn mặt hàng.</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3">
+                <div class="wrap-service">
+                   <a href="contact.html"> <img src="./assets/img/sv4.webp" alt=""></a>
+                    <h5>Giá trị tuyệt vời mỗi ngày</h5>
+                    <p>Các mặt hàng bạn yêu thích ở mức giá phù hợp.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    <!-- footer -->
-    <div class="footer">
-      <div class="container">
+  </div>
+
+  <!-- email -->
+  <div class="email">
+    <div class="container">
+        <div class="row wrap-email">
+            <div class="col-0 col-sm-6 col-md-6">
+                <div class="text-em">
+                    <h4>Hãy là người đầu tiên biết về các giao dịch tốt nhất của chúng tôi!</h4>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 ">
+                <div class="emails">
+                   <input type="text" placeholder="Địa chỉ Email ">
+                   <button>Gửi</button>
+                </div>
+            </div>
+
+          
+            
+        </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
         <div class="row wrap-footer">
-          <div class="col-4 col-sm-4 col-md-4">
-            <div class="box-footer">
-              <h3>Về chúng tôi</h3>
-              <ul>
-                <li><a href="#">Về Wayfair</a></li>
-                <li><a href="#">Wayfair chuyên nghiệp</a></li>
-                <li><a href="#">Thẻ quà tặng</a></li>
-                <li><a href="#">Thẻ tín dụng Wayfair</a></li>
-                <li><a href="#">Tài trợ Wayfair</a></li>
-                <li><a href="#">Nghề nghiệp</a></li>
-                <li><a href="#">Bán trên Wayfair</a></li>
-                <li><a href="#">Quan hệ đầu tư</a></li>
-                <li><a href="#">Quảng cáo với chúng tôi</a></li>
-                <li><a href="#">Địa điểm</a></li>
-              </ul>
+            <div class="col-12 col-sm-4 col-md-4">
+                <div class="box-footer">
+                    <h3>Về chúng tôi</h3>
+                    <ul>
+                        <li><a href="#">Về Wayfair</a></li>
+                        <li><a href="#">Wayfair chuyên nghiệp</a></li>
+                        <li><a href="#">Thẻ quà tặng</a></li>
+                        <li><a href="#">Thẻ tín dụng Wayfair</a></li>
+                        <li><a href="#">Tài trợ Wayfair</a></li>
+                        <li><a href="#">Nghề nghiệp</a></li>
+                        <li><a href="#">Bán trên Wayfair</a></li>
+                        <li><a href="#">Quan hệ đầu tư</a></li>
+                        <li><a href="#">Quảng cáo với chúng tôi</a></li>
+                        <li><a href="#">Địa điểm</a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
 
-          <div class="col-4 col-sm-4 col-md-4">
-            <div class="box-footer">
-              <h3>Dịch vụ khách hàng</h3>
-              <ul>
-                <li><a href="#">Đơn hàng của tôi</a></li>
-                <li><a href="#">Tài khoản của tôi</a></li>
-                <li><a href="#">Theo dõi đơn hàng của tôi</a></li>
-                <li>
-                  <a href="#">Tuyên bố về khả năng tiếp cận của Wayfair</a>
-                </li>
-                <li><a href="#">Chính sách hoàn trả</a></li>
-                <li><a href="#">Trung tâm trợ giúp</a></li>
-                <li><a href="#">Thu hồi sản phẩm</a></li>
-              </ul>
+            <div class="col-12 col-sm-4 col-md-4">
+                <div class="box-footer">
+                    <h3>Dịch vụ khách hàng</h3>
+                    <ul>
+                        <li><a href="#">Đơn hàng của tôi</a></li>
+                        <li><a href="#">Tài khoản của tôi</a></li>
+                        <li><a href="#">Theo dõi đơn hàng của tôi</a></li>
+                        <li><a href="#">Tuyên bố về khả năng tiếp cận của Wayfair</a></li>
+                        <li><a href="#">Chính sách hoàn trả</a></li>
+                        <li><a href="#">Trung tâm trợ giúp</a></li>
+                        <li><a href="#">Thu hồi sản phẩm</a></li>
+                        
+                    </ul>
+                </div>
             </div>
-          </div>
 
-          <div class="col-4 col-sm-4 col-md-4">
-            <div class="box-footer">
-              <h3>Liên Hệ</h3>
-              <div class="button-ft">
-                <button>Trợ giúp nhanh</button>
-                <button>Gọi cho chúng tôi</button>
-              </div>
-              <div class="text-ft">
-                <h5>Dịch vụ khách hàng</h5>
-                <p>
-                  Điện thoại : Đã đóng cửa. Mở cửa lúc 8:00 sáng theo giờ ET Trò
-                  chuyện : Đã đóng. Mở cửa lúc 8:00 sáng theo giờ
-                </p>
-                <h5>Hỗ trợ mua sắm</h5>
-                <p>Đã đóng cửa. Mở cửa lúc 8:00 sáng theo giờ ET</p>
-                <a href="#">Giờ hàng tuần</a>
-              </div>
+            <div class="col-12 col-sm-4 col-md-4">
+                <div class="box-footer">
+                    <h3>Liên Hệ</h3>
+                    <div class="button-ft">
+                        <a href="contact.html"><button>Trợ giúp nhanh</button></a>
+                        <a href="contact.html"><button>Gọi cho chúng tôi</button></a>
+                    </div>
+                    <div class="text-ft">
+                        <h5>Dịch vụ khách hàng</h5>
+                        <p>
+                            Điện thoại : Đã đóng cửa. Mở cửa lúc 8:00 sáng theo giờ ET
+                            Trò chuyện : Đã đóng. Mở cửa lúc 8:00 sáng theo giờ 
+                        </p>
+                        <h5>Hỗ trợ mua sắm</h5>
+                        <p>Đã đóng cửa. Mở cửa lúc 8:00 sáng theo giờ ET</p>
+                        <a href="#">Giờ hàng tuần</a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
+  </div>
 
     <!-- ip ft awwe -->
     <script src="./lib/fontawesome/js/fontawesome.min.js"></script>
@@ -221,5 +318,7 @@
 
     <script src="./assets/js/customdt.js"></script>
     <script src="./assets/js/detail.js"></script>
+        <!-- import comon.js -->
+<script src="./assets/js/comon.js"></script>
   </body>
 </html>
