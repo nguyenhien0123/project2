@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body >
+    <div class="img-login">
+      <img src="./assets/img/login-img.jpeg" alt="" />
+      <form class="form-login" onsubmit="signup()">
+        <label for="">SIGN IN</label>
+        <input type="text" id="username" placeholder="Username" /><br />
+        <input type="email" id="email" placeholder="Email" /><br />
+        <input type="password" id="password" placeholder="Password" /><br />
+        <div class="back">
+          <a href="login.html">Login</a>
+          <a href="index.html">Back</a>
+         </div>
+        <button >Sign In</button>
+      </form>
+    </div>
+    <script>
+     
+function signup(e){
+    event.preventDefault();
+    var username=document.querySelector("#username").value;
+    var email=document.querySelector("#email").value;
+    var password=document.querySelector("#password").value;
+
+    var user ={
+        username: username,
+        email: email,
+        password: password,
+    };
+    var json =JSON.stringify(user);
+    localStorage.setItem(username,json);
+    alert('dang ky thanh cong')
+    window.location.href="index.html";
+}
+function login(e){
+    event.defaultPrevented
+}
+    </script>
+  </body>
+</html>
