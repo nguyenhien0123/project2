@@ -1491,9 +1491,9 @@ body{
     display: none;
   }
   .total{
-    margin-top: 100px;
+
     position: static;
-    margin-left: 400px;
+    margin-left: 100px;
   }
   .price-detail{
     margin-top: 30px;
@@ -1502,7 +1502,7 @@ body{
     margin-bottom: 200px;
   }
   .listing{
-    margin-top: 200px;
+    margin-top: 600px;
 
   }
 }

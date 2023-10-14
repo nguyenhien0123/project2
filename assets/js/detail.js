@@ -21,7 +21,7 @@ const showData=(data)=>{
        <img class="cart-image" src="${data.img}" alt="" />
      </div>
      <div class="slide">
-       <img class="cart-image" src="${data.imgs}" alt="" />
+       <img class="cart-image" src="${data.img}" alt="" />
      </div>
      <div class="slide">
        <img class="cart-image" src="${data.img}" alt="" />
@@ -134,7 +134,7 @@ waitForAddToCartButton().then((addToCart) => {
     name:data.title,
     price:data.newPrice,
     image:data.img,
-    quantity:1 //so luong mac dinh la mot khi them vao gio hang
+    quantity:1 
   };
   let cart = JSON.parse(localStorage.getItem('cart')) || [];
   if (!Array.isArray(cart)) {
@@ -161,7 +161,7 @@ if(!isAdd){
   };
 
   if (!Array.isArray(cart)) {
-    cart = []; // Nếu không phải mảng, thì tạo một mảng mới
+    cart = [];
 }
 
 // Thêm sản phẩm vào giỏ hàng
